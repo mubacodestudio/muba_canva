@@ -61,11 +61,15 @@ const WorkSpace = ({ element, setElement }: any) => {
 
   return (
     <>
-      <div className="w-[80%] flex items-center justify-center">
+      <div
+        className="w-[80%] flex items-center justify-center"
+        onClick={() => selectShape(null)}
+      >
         <div
           className="bg-white border border-black w-4/5 h-4/5 overflow-hidden relative"
           id="layerContainer"
           ref={containerRef}
+          onClick={(e) => e.stopPropagation()}
         >
           <Stage
             ref={stageRef}

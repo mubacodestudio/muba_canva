@@ -102,7 +102,7 @@ const QRPopup = ({
             <button
               onClick={handleGenerateQR}
               disabled={!url.value}
-              className={`bg-yellow-500 p-2 rounded-md font-semibold text-lg ${
+              className={`bg-blue-500 p-2 rounded-md font-semibold text-lg ${
                 url.value ? `cursor-pointer` : `cursor-not-allowed`
               }`}
             >
@@ -177,7 +177,7 @@ const QRPopup = ({
           </button>
           <button
             onClick={handleAddQRCode}
-            className="bg-yellow-500 hover:bg-yellow-300 transition-colors px-5 py-2 rounded-md"
+            className="bg-blue-500 hover:bg-blue-300 transition-colors px-5 py-2 rounded-md"
           >
             Add QR Code
           </button>

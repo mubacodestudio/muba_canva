@@ -181,7 +181,7 @@ const ElementDetailController = ({
           <div className="flex items-center justify-between space-x-2 border-b p-2">
             <button
               className={`border p-1 rounded ${
-                data?.data?.locked ? `bg-yellow-500` : ``
+                data?.data?.locked ? `bg-blue-500` : ``
               }`}
               onClick={() => handleOnClick("LOCK", !data?.data?.locked)}
             >
@@ -359,7 +359,7 @@ const ElementDetailController = ({
                 </div>
 
                 <button
-                  className="bg-yellow-500 hover:bg-yellow-300 mt-3 w-full outline-none"
+                  className="bg-blue-500 hover:bg-blue-300 mt-3 w-full outline-none"
                   onClick={handleDownload}
                 >
                   Dowload
